@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gesture Harness</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg, #14101c); }
+  canvas { display: block; width: 100%; height: 100%; }
+  #note { position: fixed; left: 16px; bottom: 14px; font: 500 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: #e9e4f2; opacity: .75; text-shadow: 0 1px 3px #000; transition: opacity .4s; pointer-events: none; }
+  .clean #note { display: none; }
+  #try { position: fixed; left: 0; right: 0; top: 12px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 0 12px; }
+  #try button { padding: 6px 12px; border: 1px solid #5d5277; border-radius: 999px; background: #241d33; color: #e9e4f2; font: 500 13px system-ui, sans-serif; cursor: pointer; }
+  #try button:hover { background: #3a2f52; }
+  #try .face { border-style: dashed; }
+</style>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }</script>
+</head>
+<body>
+<p id="note">Connecting…</p>
+<script type="module" src="/viewer.js"></script>
+</body>
+</html>

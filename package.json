@@ -1,0 +1,12 @@
+{
+  "name": "gesture-harness",
+  "version": "0.1.0",
+  "description": "Let an LLM play the gestures of any animated 3D character, over MCP. Bring a .glb with animations; open the viewer in a browser.",
+  "type": "module",
+  "bin": { "gesture-harness": "src/server.js" },
+  "files": ["src", "viewer", "models"],
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "model-context-protocol", "llm", "avatar", "gestures", "animation", "gltf", "three.js"],
+  "author": "Dan Parry",
+  "license": "MIT"
+}
